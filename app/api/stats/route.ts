@@ -5,6 +5,7 @@ export async function GET() {
   try {
     const totalProjects = projects.length;
     const totalSkills = skills.reduce((acc, group) => acc + group.items.length, 0);
+    // started working in 2018
     const yearsOfExperience = new Date().getFullYear() - 2018;
     
     const techStack = skills.flatMap(group => group.items);

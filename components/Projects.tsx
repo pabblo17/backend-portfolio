@@ -2,6 +2,7 @@ import { projects } from "@/lib/data";
 import { ExternalLink } from "lucide-react";
 
 export default function Projects() {
+  // showing sample projects for now
   return (
     <section id="projects" className="py-20 bg-gray-800">
       <div className="container mx-auto px-4">

@@ -1,3 +1,4 @@
+// Personal information - update this with your actual details
 export const personalInfo = {
   name: "Pablo Chandi",
   role: "Senior Backend Engineer | Fullstack Experience",
@@ -51,6 +52,8 @@ export const skills = [
   }
 ];
 
+// TODO: Replace with actual projects
+// keeping these as placeholders for now
 export const projects = [
   {
     id: 1,

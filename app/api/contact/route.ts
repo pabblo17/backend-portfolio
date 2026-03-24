@@ -12,6 +12,8 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    // TODO: integrate with email service (SendGrid, Resend, etc)
+    // for now just logging to console
     console.log("Contact form submission:", { name, email, message });
 
     return NextResponse.json(

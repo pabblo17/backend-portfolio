@@ -16,6 +16,7 @@ export default function Contact() {
     e.preventDefault();
     setStatus("sending");
 
+    // TODO: add proper error handling and validation
     try {
       const response = await fetch("/api/contact", {
         method: "POST",
