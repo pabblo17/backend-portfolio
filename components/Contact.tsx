@@ -35,62 +35,62 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gray-50 dark:bg-gray-800">
+    <section id="contact" className="py-20 bg-gray-800">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center text-gray-900 dark:text-white mb-12">
+        <h2 className="text-4xl font-bold text-center text-white mb-12">
           Get In Touch
         </h2>
         
         <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
-            <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6">
+            <h3 className="text-2xl font-semibold text-white mb-6">
               Contact Information
             </h3>
             <div className="space-y-4">
               <a 
                 href={`mailto:${personalInfo.email}`}
-                className="flex items-center gap-3 text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition"
+                className="flex items-center gap-3 text-gray-300 hover:text-blue-400 transition"
               >
-                <Mail className="text-blue-600 dark:text-blue-400" />
+                <Mail className="text-blue-400" />
                 <span>{personalInfo.email}</span>
               </a>
               <a 
                 href={personalInfo.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition"
+                className="flex items-center gap-3 text-gray-300 hover:text-blue-400 transition"
               >
-                <ExternalLink className="text-blue-600 dark:text-blue-400" />
+                <ExternalLink className="text-blue-400" />
                 <span>GitHub Profile</span>
               </a>
               <a 
                 href={personalInfo.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition"
+                className="flex items-center gap-3 text-gray-300 hover:text-blue-400 transition"
               >
-                <ExternalLink className="text-blue-600 dark:text-blue-400" />
+                <ExternalLink className="text-blue-400" />
                 <span>LinkedIn Profile</span>
               </a>
             </div>
             
-            <div className="mt-8 p-6 bg-blue-50 dark:bg-gray-900 rounded-lg border border-blue-200 dark:border-blue-800">
-              <h4 className="font-semibold text-gray-900 dark:text-white mb-2">
+            <div className="mt-8 p-6 bg-gray-900 rounded-lg border border-gray-700">
+              <h4 className="font-semibold text-white mb-2">
                 Open to Opportunities
               </h4>
-              <p className="text-gray-600 dark:text-gray-300 text-sm">
+              <p className="text-gray-300 text-sm">
                 I&apos;m currently open to backend development opportunities, consulting projects, and collaborations. Feel free to reach out!
               </p>
             </div>
           </div>
 
           <div>
-            <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6">
+            <h3 className="text-2xl font-semibold text-white mb-6">
               Send a Message
             </h3>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+                <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-1">
                   Name
                 </label>
                 <input
@@ -99,11 +99,11 @@ export default function Contact() {
                   required
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent dark:bg-gray-700 dark:text-white"
+                  className="w-full px-4 py-2 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent bg-gray-700 text-white"
                 />
               </div>
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+                <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-1">
                   Email
                 </label>
                 <input
@@ -112,11 +112,11 @@ export default function Contact() {
                   required
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent dark:bg-gray-700 dark:text-white"
+                  className="w-full px-4 py-2 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent bg-gray-700 text-white"
                 />
               </div>
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+                <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-1">
                   Message
                 </label>
                 <textarea
@@ -125,7 +125,7 @@ export default function Contact() {
                   rows={5}
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent dark:bg-gray-700 dark:text-white"
+                  className="w-full px-4 py-2 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent bg-gray-700 text-white"
                 />
               </div>
               <button
@@ -137,12 +137,12 @@ export default function Contact() {
                 {status === "sending" ? "Sending..." : "Send Message"}
               </button>
               {status === "success" && (
-                <p className="text-green-600 dark:text-green-400 text-sm text-center">
+                <p className="text-green-400 text-sm text-center">
                   Message sent successfully!
                 </p>
               )}
               {status === "error" && (
-                <p className="text-red-600 dark:text-red-400 text-sm text-center">
+                <p className="text-red-400 text-sm text-center">
                   Failed to send message. Please try again.
                 </p>
               )}
