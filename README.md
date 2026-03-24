@@ -1,36 +1,131 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Backend Developer Portfolio
 
-## Getting Started
+Modern portfolio website showcasing backend development skills, built with Next.js 14, TypeScript, and Tailwind CSS.
 
-First, run the development server:
+## 🚀 Tech Stack
+
+- **Framework**: Next.js 14 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Icons**: Lucide React
+- **Runtime**: Node.js 20+
+
+## ✨ Features
+
+- 📱 Fully responsive design
+- 🌓 Dark mode support
+- ⚡ Server-side rendering (SSR)
+- 🎨 Modern UI with Tailwind CSS
+- 🔌 RESTful API routes
+- 📊 Dynamic project showcase
+- 💼 Professional experience timeline
+- 📧 Contact form with API integration
+
+## 🛠️ API Routes
+
+The portfolio includes functional backend API routes demonstrating backend development skills:
+
+### Available Endpoints
+
+- **GET** `/api/health` - Health check endpoint
+- **GET** `/api/projects` - List all projects (supports `?tech=` and `?limit=` query params)
+- **GET** `/api/projects/[id]` - Get specific project by ID
+- **GET** `/api/stats` - Portfolio statistics and metrics
+- **POST** `/api/contact` - Contact form submission
+
+### Example API Usage
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Get all projects
+curl http://localhost:3000/api/projects
+
+# Filter projects by technology
+curl http://localhost:3000/api/projects?tech=node
+
+# Get portfolio stats
+curl http://localhost:3000/api/stats
+
+# Health check
+curl http://localhost:3000/api/health
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📦 Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Prerequisites
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Node.js 20+ (use NVM: `nvm use`)
+- npm or yarn
 
-## Learn More
+### Installation
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+# Install dependencies
+npm install
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Run development server
+npm run dev
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Build for production
+npm run build
 
-## Deploy on Vercel
+# Start production server
+npm start
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Open [http://localhost:3000](http://localhost:3000) to view the portfolio.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📁 Project Structure
+
+```
+├── app/
+│   ├── api/              # API routes
+│   │   ├── contact/      # Contact form endpoint
+│   │   ├── projects/     # Projects API
+│   │   ├── stats/        # Statistics endpoint
+│   │   └── health/       # Health check
+│   ├── layout.tsx        # Root layout
+│   ├── page.tsx          # Home page
+│   └── globals.css       # Global styles
+├── components/           # React components
+│   ├── Header.tsx
+│   ├── Hero.tsx
+│   ├── Skills.tsx
+│   ├── Projects.tsx
+│   ├── Experience.tsx
+│   ├── Contact.tsx
+│   └── Footer.tsx
+├── lib/
+│   └── data.ts          # Portfolio data
+└── public/              # Static assets
+```
+
+## 🎨 Customization
+
+Edit the portfolio data in `lib/data.ts`:
+
+- Personal information
+- Skills and technologies
+- Projects and achievements
+- Work experience
+- Certifications
+
+## 🚀 Deploy on Vercel
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone)
+
+1. Push your code to GitHub
+2. Import your repository in Vercel
+3. Vercel will auto-detect Next.js and deploy
+4. Your portfolio will be live!
+
+### Environment Variables
+
+No environment variables required for basic deployment. Add these if you want to extend functionality:
+
+- `SMTP_HOST` - For email notifications
+- `DATABASE_URL` - For storing contact form submissions
+- `ANALYTICS_ID` - For analytics tracking
+
+## 📝 License
+
+MIT License - feel free to use this portfolio template for your own projects!
