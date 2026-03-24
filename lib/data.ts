@@ -1,5 +1,5 @@
 export const personalInfo = {
-  name: "Pablo Chandí",
+  name: "Pablo Chandi",
   role: "Senior Backend Engineer | Fullstack Experience",
   bio: "Senior Backend Engineer with 7+ years building SaaS systems in cybersecurity and payroll. Most of my work has been around distributed systems, cloud (AWS/GCP), and Kubernetes, focusing on improving reliability, performance, and scalability. I'm comfortable working end-to-end across backend, infrastructure, and frontend when needed, and I tend to approach problems with a focus on system design and long-term maintainability.",
   email: "pachande@gmail.com",
@@ -19,7 +19,7 @@ export const skills = [
   },
   {
     category: "Databases",
-    items: ["PostgreSQL", "MongoDB", "Redis", "Couchdb", "Gitlabs", "Jenkins"]
+    items: ["PostgreSQL", "MongoDB", "Redis"]
   },
   {
     category: "Cloud & DevOps",
@@ -54,56 +54,39 @@ export const skills = [
 export const projects = [
   {
     id: 1,
-    title: "Mission-Critical Payroll System - Colombia",
-    description: "Developed and maintained a mission-critical payroll system for Colombia at Buk Spa, ensuring accurate calculations aligned with local labor and tax regulations (salaries, benefits, taxes, legal compliance).",
-    technologies: ["Ruby on Rails", "PostgreSQL", "Redis", "React", "Grafana", "Sentry"],
+    title: "Sample Project Title",
+    description: "Sample project description. This is a placeholder for future project details.",
+    technologies: ["Technology 1", "Technology 2", "Technology 3"],
     highlights: [
-      "Delivered features end-to-end across backend and frontend for company expansion into new markets",
-      "Improved system architecture through refactoring, increasing modularity and reducing technical debt",
-      "Monitored production systems using Grafana and Sentry for quick identification and resolution of critical issues",
-      "Collaborated with legal, product, and HR teams to translate complex regulatory requirements into scalable solutions"
+      "Sample highlight 1",
+      "Sample highlight 2",
+      "Sample highlight 3"
     ],
     github: null,
     demo: null
   },
   {
     id: 2,
-    title: "AI Document Classification Agent",
-    description: "Led the development of a document classification agent at KRIPTOS, improving system scalability and maintainability using asynchronous processing with queues and background workers.",
-    technologies: ["Python", "C#", "Kafka", "RabbitMQ", "Docker", "Kubernetes", "Elasticsearch"],
+    title: "Sample Project Title",
+    description: "Sample project description. This is a placeholder for future project details.",
+    technologies: ["Technology 1", "Technology 2", "Technology 3"],
     highlights: [
-      "Implemented asynchronous processing using queues and background workers for document classification workflows",
-      "Improved scalability and system reliability while monitoring logs and metrics to ensure quality",
-      "Contributed to system design decisions to improve component interactions",
-      "Built data pipelines to extract, transform, and analyze large datasets"
+      "Sample highlight 1",
+      "Sample highlight 2",
+      "Sample highlight 3"
     ],
     github: null,
     demo: null
   },
   {
     id: 3,
-    title: "Cloud Agent & Scanning Services",
-    description: "Took ownership of a cloud agent at KRIPTOS, working on scanning processes, monitoring logs and metrics, and improving system reliability. Integrated with external services like Google and Microsoft platforms.",
-    technologies: ["C#", "ASP.NET Core", "Docker", "Kubernetes", "AWS", "Google Cloud"],
+    title: "Sample Project Title",
+    description: "Sample project description. This is a placeholder for future project details.",
+    technologies: ["Technology 1", "Technology 2", "Technology 3"],
     highlights: [
-      "Developed Windows services, internal tools, and APIs using C#",
-      "Supported containerized tools (Docker) and managed containers in Kubernetes environments",
-      "Supported enterprise cloud and Windows agents, troubleshooting issues and implementing improvements",
-      "Integrated with external services such as Google and Microsoft platforms"
-    ],
-    github: null,
-    demo: null
-  },
-  {
-    id: 4,
-    title: "Database Optimization & Data Pipelines",
-    description: "Applied indexing strategies to optimize database performance and handle large datasets more efficiently. Built data pipelines for extraction, transformation, and analysis.",
-    technologies: ["PostgreSQL", "MongoDB", "Python", "Bash", "APIs"],
-    highlights: [
-      "Optimized database performance through strategic indexing for large datasets",
-      "Built data pipelines to extract, transform, and analyze large datasets",
-      "Took ownership of data-related tasks including manual analysis and quality work",
-      "Worked on various applications including secure verifier and Windows product tools"
+      "Sample highlight 1",
+      "Sample highlight 2",
+      "Sample highlight 3"
     ],
     github: null,
     demo: null
