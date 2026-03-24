@@ -1,6 +1,6 @@
-# Backend Developer Portfolio
+# Backend Portfolio
 
-Modern portfolio website showcasing backend development skills, built with Next.js 14, TypeScript, and Tailwind CSS.
+Modern portfolio website for backend developers, built with Next.js 14, TypeScript, and Tailwind CSS.
 
 ## 🚀 Tech Stack
 
