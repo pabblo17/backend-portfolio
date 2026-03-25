@@ -1,8 +1,14 @@
 "use client";
 
-import { Mail, Send, ExternalLink } from "lucide-react";
+import { Mail, Send } from "lucide-react";
 import { useState } from "react";
 import { useTranslation } from "@/lib/i18n/useTranslation";
+import {
+  LinkedInIcon,
+  InstagramIcon,
+  FacebookIcon,
+  TikTokIcon,
+} from "./icons/SocialIcons";
 
 export default function Contact() {
   const { data, t } = useTranslation();
@@ -51,19 +57,10 @@ export default function Contact() {
             <div className="space-y-4">
               <a
                 href={`mailto:${data.personalInfo.email}`}
-                className="flex items-center gap-3 text-gray-300 hover:text-blue-400 transition"
+                className="flex items-center gap-3 text-gray-300 hover:text-white transition"
               >
                 <Mail className="text-blue-400" />
                 <span>{data.personalInfo.email}</span>
-              </a>
-              <a
-                href={data.personalInfo.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-3 text-gray-300 hover:text-blue-400 transition"
-              >
-                <ExternalLink className="text-blue-400" />
-                <span>{t.contact.githubProfile}</span>
               </a>
               <a
                 href={data.personalInfo.linkedin}
@@ -71,8 +68,35 @@ export default function Contact() {
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 text-gray-300 hover:text-blue-400 transition"
               >
-                <ExternalLink className="text-blue-400" />
-                <span>{t.contact.linkedinProfile}</span>
+                <LinkedInIcon size={20} className="text-blue-400" />
+                <span>{t.contact.linkedinProfile || "LinkedIn Profile"}</span>
+              </a>
+              <a
+                href={data.personalInfo.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 text-gray-300 hover:text-pink-400 transition"
+              >
+                <InstagramIcon size={20} className="text-blue-400" />
+                <span>{t.contact.instagramProfile || "Instagram Profile"}</span>
+              </a>
+              <a
+                href={data.personalInfo.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 text-gray-300 hover:text-blue-500 transition"
+              >
+                <FacebookIcon size={20} className="text-blue-400" />
+                <span>{t.contact.facebookProfile || "Facebook Profile"}</span>
+              </a>
+              <a
+                href={data.personalInfo.tiktok}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 text-gray-300 hover:text-gray-100 transition"
+              >
+                <TikTokIcon size={20} className="text-blue-400" />
+                <span>{t.contact.tiktokProfile || "TikTok Profile"}</span>
               </a>
             </div>
 
