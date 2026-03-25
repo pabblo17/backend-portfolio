@@ -103,6 +103,7 @@ export const experience = [
     company: "Buk Spa - HR & Payroll Software",
     position: "Software Engineer (Remote, Chile)",
     period: "Jan 2023 - Present",
+    location: "Chile (Remote)",
     description:
       "Working on a mission-critical payroll system for Colombia, ensuring accurate calculations aligned with local labor and tax regulations.",
     achievements: [
@@ -120,6 +121,7 @@ export const experience = [
     company: "KRIPTOS - AI & Cybersecurity Company",
     position: "Semi Senior - Software Engineer (Remote)",
     period: "Jul 2019 - Dec 2022",
+    location: "Remote",
     description:
       "Led the development of a document classification agent, improving system scalability and reliability.",
     achievements: [
@@ -139,6 +141,7 @@ export const experience = [
     company: "KRIPTOS - AI & Cybersecurity Company",
     position: "Junior Software Engineer",
     period: "Earlier Role",
+    location: "Remote",
     description:
       "Worked on various applications including a secure verifier and tools for uninstalling Windows products.",
     achievements: [

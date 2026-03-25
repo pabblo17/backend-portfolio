@@ -24,6 +24,7 @@ export const ui = {
     title: "Experience & Certifications",
     workExperience: "Work Experience",
     certifications: "Certifications",
+    achievements: "Key Achievements:",
   },
   contact: {
     title: "Get In Touch",
@@ -37,7 +38,8 @@ export const ui = {
     success: "Message sent successfully!",
     error: "Failed to send message. Please try again.",
     openToOpportunities: "Open to Opportunities",
-    opportunitiesText: "I'm currently open to backend development opportunities, consulting projects, and collaborations. Feel free to reach out!",
+    opportunitiesText:
+      "I'm currently open to backend development opportunities, consulting projects, and collaborations. Feel free to reach out!",
     githubProfile: "GitHub Profile",
     linkedinProfile: "LinkedIn Profile",
   },

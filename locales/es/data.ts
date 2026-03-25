@@ -103,6 +103,7 @@ export const experience = [
     company: "Buk Spa - Software de RRHH y Nómina",
     position: "Ingeniero de Software (Remoto, Chile)",
     period: "Ene 2023 - Presente",
+    location: "Chile (Remoto)",
     description:
       "Trabajando en un sistema de nómina crítico para Colombia, asegurando cálculos precisos alineados con las regulaciones laborales y fiscales locales.",
     achievements: [
@@ -120,6 +121,7 @@ export const experience = [
     company: "KRIPTOS - Empresa de IA y Ciberseguridad",
     position: "Ingeniero de Software Semi Senior (Remoto)",
     period: "Jul 2019 - Dic 2022",
+    location: "Remoto",
     description:
       "Lideré el desarrollo de un agente de clasificación de documentos, mejorando la escalabilidad y confiabilidad del sistema.",
     achievements: [
@@ -139,6 +141,7 @@ export const experience = [
     company: "KRIPTOS - Empresa de IA y Ciberseguridad",
     position: "Ingeniero de Software Junior",
     period: "Rol Anterior",
+    location: "Remoto",
     description:
       "Trabajé en varias aplicaciones incluyendo un verificador seguro y herramientas para desinstalar productos de Windows.",
     achievements: [
