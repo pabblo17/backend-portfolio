@@ -4,7 +4,7 @@ import { ExternalLink, Folder } from "lucide-react";
 import { useTranslation } from "@/lib/i18n/useTranslation";
 
 export default function Projects() {
-  const { data, t } = useTranslation();
+  const { data, t, c } = useTranslation();
 
   return (
     <section id="projects" className="py-20 bg-gray-900">
@@ -79,7 +79,7 @@ export default function Projects() {
           <div className="bg-gray-800/30 rounded-lg border border-dashed border-gray-600 p-6 flex flex-col items-center justify-center min-h-[280px]">
             <Folder className="text-gray-600 mb-3" size={40} />
             <p className="text-gray-500 text-sm text-center">
-              Próximo proyecto
+              {c.projects.nextProject}
             </p>
           </div>
         </div>
@@ -93,7 +93,7 @@ export default function Projects() {
             className="inline-flex items-center gap-2 px-6 py-3 bg-gray-800 text-white rounded-lg border border-gray-700 hover:border-blue-400 hover:bg-gray-700 transition-all duration-300"
           >
             <ExternalLink size={20} />
-            <span>Ver más proyectos en GitHub</span>
+            <span>{c.projects.viewMoreGithub}</span>
           </a>
         </div>
       </div>

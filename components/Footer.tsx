@@ -1,14 +1,12 @@
 "use client";
 
 import { useTranslation } from "@/lib/i18n/useTranslation";
-import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { LinkedInIcon } from "./icons/SocialIcons";
 import { Mail } from "lucide-react";
 import Link from "next/link";
 
 export default function Footer() {
-  const { data, t } = useTranslation();
-  const { language } = useLanguage();
+  const { data, t, c } = useTranslation();
 
   return (
     <footer className="bg-black text-gray-300 py-12 border-t border-gray-800">
@@ -22,46 +20,44 @@ export default function Footer() {
             <div className="flex items-center gap-2 mb-3">
               <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
               <span className="text-sm text-green-400 font-medium">
-                {language === "es"
-                  ? "Disponible para nuevos proyectos"
-                  : "Available for new projects"}
+                {c.footer.availability}
               </span>
             </div>
             <div className="flex items-center gap-2 text-gray-400 text-sm">
               <span className="text-lg">🇪🇨</span>
-              <span>Quito, Pichincha, Ecuador • 170150</span>
+              <span>{c.footer.location}</span>
             </div>
           </div>
 
           {/* Columna 2: Navegación */}
           <div>
             <h4 className="text-white font-semibold mb-4">
-              {language === "es" ? "Navegación" : "Navigation"}
+              {c.footer.navigation}
             </h4>
             <nav className="flex flex-col gap-2">
               <Link
                 href="/#projects"
                 className="text-gray-400 hover:text-white transition text-sm"
               >
-                {language === "es" ? "Proyectos" : "Projects"}
+                {c.footer.projects}
               </Link>
               <Link
                 href="/#experience"
                 className="text-gray-400 hover:text-white transition text-sm"
               >
-                {language === "es" ? "Experiencia" : "Experience"}
+                {c.footer.experience}
               </Link>
               <Link
                 href="/blog"
                 className="text-gray-400 hover:text-white transition text-sm"
               >
-                Blog
+                {c.footer.blog}
               </Link>
               <Link
                 href="/contact"
                 className="text-gray-400 hover:text-white transition text-sm"
               >
-                {language === "es" ? "Contacto" : "Contact"}
+                {c.footer.contact}
               </Link>
             </nav>
           </div>
@@ -69,7 +65,7 @@ export default function Footer() {
           {/* Columna 3: Redes sociales */}
           <div>
             <h4 className="text-white font-semibold mb-4">
-              {language === "es" ? "Redes Sociales" : "Social Media"}
+              {c.footer.socialMedia}
             </h4>
             <div className="flex gap-4">
               <a

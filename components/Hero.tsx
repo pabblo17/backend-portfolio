@@ -1,11 +1,9 @@
 "use client";
 
 import { useTranslation } from "@/lib/i18n/useTranslation";
-import { useLanguage } from "@/lib/i18n/LanguageContext";
 
 export default function Hero() {
-  const { data, t } = useTranslation();
-  const { language } = useLanguage();
+  const { data, c, t } = useTranslation();
 
   return (
     <section className="min-h-screen flex items-center justify-center bg-gray-900">
@@ -14,8 +12,7 @@ export default function Hero() {
           {/* Contenido Principal - Estilo PCH con saludo */}
           <div className="mb-8">
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
-              {language === "es" ? "Hola soy" : "Hi I'm"}{" "}
-              {data.personalInfo.name}
+              {c.hero.greeting} {data.personalInfo.name}
             </h1>
           </div>
 

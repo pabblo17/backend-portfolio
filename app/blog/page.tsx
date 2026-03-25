@@ -1,22 +1,18 @@
 "use client";
 
 import { Calendar, Clock, ArrowRight } from "lucide-react";
-import { useLanguage } from "@/lib/i18n/LanguageContext";
+import { useTranslation } from "@/lib/i18n/useTranslation";
 import Link from "next/link";
 
 export default function BlogPage() {
-  const { language } = useLanguage();
+  const { c, language } = useTranslation();
 
   // Artículo de ejemplo con nota de IA
   const blogPosts = [
     {
       id: 1,
-      title: language === "es" 
-        ? "Cómo optimizar el rendimiento de aplicaciones React" 
-        : "How to optimize React application performance",
-      excerpt: language === "es"
-        ? "Exploramos técnicas avanzadas para mejorar el rendimiento de aplicaciones React, incluyendo memoización, lazy loading y optimización de re-renders."
-        : "We explore advanced techniques to improve React application performance, including memoization, lazy loading, and re-render optimization.",
+      title: c.blog.samplePost.title,
+      excerpt: c.blog.samplePost.excerpt,
       date: "2024-03-15",
       readTime: "5 min",
       aiAssisted: true,
@@ -29,7 +25,7 @@ export default function BlogPage() {
       <header className="py-6 border-b border-gray-800">
         <div className="container mx-auto px-4">
           <Link href="/" className="text-white hover:text-blue-400 transition">
-            ← {language === "es" ? "Volver" : "Back"}
+            ← {c.blog.backButton}
           </Link>
         </div>
       </header>
@@ -41,13 +37,9 @@ export default function BlogPage() {
             {/* Header */}
             <div className="text-center mb-12">
               <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-                Blog
+                {c.blog.title}
               </h1>
-              <p className="text-gray-400 text-lg">
-                {language === "es"
-                  ? "Pensamientos, experiencias y aprendizajes sobre desarrollo de software"
-                  : "Thoughts, experiences, and learnings about software development"}
-              </p>
+              <p className="text-gray-400 text-lg">{c.blog.description}</p>
             </div>
 
             {/* Blog posts */}
@@ -62,19 +54,29 @@ export default function BlogPage() {
                     <div className="flex flex-wrap items-center gap-4 text-sm text-gray-400">
                       <div className="flex items-center gap-1">
                         <Calendar size={16} />
-                        <span>{new Date(post.date).toLocaleDateString(language === "es" ? "es-ES" : "en-US", {
-                          year: "numeric",
-                          month: "long",
-                          day: "numeric"
-                        })}</span>
+                        <span>
+                          {new Date(post.date).toLocaleDateString(
+                            language === "es" ? "es-ES" : "en-US",
+                            {
+                              year: "numeric",
+                              month: "long",
+                              day: "numeric",
+                            },
+                          )}
+                        </span>
                       </div>
                       <div className="flex items-center gap-1">
                         <Clock size={16} />
-                        <span>{post.readTime} {language === "es" ? "lectura" : "read"}</span>
+                        <span>
+                          {post.readTime}{" "}
+                          {language === "es" ? "lectura" : "read"}
+                        </span>
                       </div>
                       {post.aiAssisted && (
                         <span className="px-2 py-1 bg-purple-500/10 text-purple-400 rounded text-xs border border-purple-500/20">
-                          {language === "es" ? "✨ Escrito con ayuda de IA" : "✨ AI-assisted"}
+                          {language === "es"
+                            ? "✨ Escrito con ayuda de IA"
+                            : "✨ AI-assisted"}
                         </span>
                       )}
                     </div>

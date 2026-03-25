@@ -7,7 +7,7 @@ import { useLanguage } from "@/lib/i18n/LanguageContext";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { data, t } = useTranslation();
+  const { t, c } = useTranslation();
   const { language, setLanguage } = useLanguage();
 
   // smooth scroll to sections
@@ -30,7 +30,7 @@ export default function Header() {
             <div className="flex items-center gap-1">
               <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
               <span className="text-xs text-green-400 font-medium">
-                {language === "es" ? "Disponible" : "Available"}
+                {c.header.available}
               </span>
             </div>
           </div>

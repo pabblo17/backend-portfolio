@@ -8,72 +8,58 @@ import {
   Briefcase,
   Code,
 } from "lucide-react";
-import { useLanguage } from "@/lib/i18n/LanguageContext";
+import { useTranslation } from "@/lib/i18n/useTranslation";
 import Link from "next/link";
 
 export default function ContactPage() {
-  const { language } = useLanguage();
+  const { c } = useTranslation();
 
   const contactMethods = [
     {
       icon: Mail,
-      title: "Email",
-      description:
-        language === "es"
-          ? "Para consultas generales y proyectos."
-          : "For general inquiries and projects.",
+      title: c.contactPage.email.title,
+      description: c.contactPage.email.description,
       value: "contacto@ejemplo.com",
       link: "mailto:contacto@ejemplo.com",
       color: "blue",
     },
     {
       icon: MessageCircle,
-      title: "WhatsApp",
-      description:
-        language === "es"
-          ? "Para consultas rápidas y directas."
-          : "For quick and direct inquiries.",
+      title: c.contactPage.whatsapp.title,
+      description: c.contactPage.whatsapp.description,
       value: "+504 3175 1455",
       link: "https://wa.me/50431751455",
       color: "green",
     },
     {
       icon: Briefcase,
-      title: "LinkedIn",
-      description:
-        language === "es"
-          ? "Conecta profesionalmente."
-          : "Connect professionally.",
-      value: language === "es" ? "Ver perfil" : "View profile",
+      title: c.contactPage.linkedin.title,
+      description: c.contactPage.linkedin.description,
+      value: c.contactPage.linkedin.action,
       link: "https://linkedin.com/in/ejemplo",
       color: "blue",
     },
     {
       icon: Code,
-      title: "GitHub",
-      description:
-        language === "es"
-          ? "Explora mi código y proyectos."
-          : "Explore my code and projects.",
-      value: language === "es" ? "Ver repositorios" : "View repositories",
+      title: c.contactPage.github.title,
+      description: c.contactPage.github.description,
+      value: c.contactPage.github.action,
       link: "https://github.com/ejemplo",
       color: "gray",
     },
     {
       icon: MapPin,
-      title: language === "es" ? "Ubicación" : "Location",
-      description:
-        language === "es" ? "Base de operaciones." : "Base of operations.",
-      value: "Honduras, C.A.",
+      title: c.contactPage.location.title,
+      description: c.contactPage.location.description,
+      value: c.contactPage.location.value,
       link: null,
       color: "purple",
     },
     {
       icon: Calendar,
-      title: language === "es" ? "Agenda" : "Schedule",
-      description:
-        language === "es" ? "¿Listo para iniciar?" : "Ready to start?",
-      value: language === "es" ? "Solicitar reunión" : "Request meeting",
+      title: c.contactPage.schedule.title,
+      description: c.contactPage.schedule.description,
+      value: c.contactPage.schedule.action,
       link: "https://calendly.com/ejemplo",
       color: "orange",
     },
@@ -96,7 +82,7 @@ export default function ContactPage() {
       <header className="py-6 border-b border-gray-800">
         <div className="container mx-auto px-4">
           <Link href="/" className="text-white hover:text-blue-400 transition">
-            ← {language === "es" ? "Volver" : "Back"}
+            ← {c.contactPage.backButton}
           </Link>
         </div>
       </header>
@@ -106,13 +92,9 @@ export default function ContactPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              {language === "es" ? "Hablemos" : "Let's Talk"}
+              {c.contactPage.title}
             </h1>
-            <p className="text-gray-400 text-lg">
-              {language === "es"
-                ? "¿Tienes una idea innovadora o necesitas ayuda con un proyecto técnico? Estoy listo para escuchar y colaborar."
-                : "Have an innovative idea or need help with a technical project? I'm ready to listen and collaborate."}
-            </p>
+            <p className="text-gray-400 text-lg">{c.contactPage.description}</p>
           </div>
 
           {/* Contact cards grid */}
@@ -163,9 +145,7 @@ export default function ContactPage() {
           {/* Footer note */}
           <div className="text-center mt-12">
             <p className="text-gray-500 text-sm">
-              {language === "es"
-                ? "Normalmente respondo en menos de 24 horas."
-                : "I usually respond within 24 hours."}
+              {c.contactPage.responseTime}
             </p>
           </div>
         </div>
