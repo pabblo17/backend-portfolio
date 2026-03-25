@@ -76,24 +76,45 @@ export default function Header() {
               </span>
             </button>
             <a
-              href={data.personalInfo.github}
+              href={data.personalInfo.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-300 hover:text-white transition"
+              className="text-gray-300 hover:text-blue-400 transition"
+              title="LinkedIn"
             >
               <ExternalLink size={20} />
             </a>
             <a
-              href={data.personalInfo.linkedin}
+              href={data.personalInfo.instagram}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-300 hover:text-white transition"
+              className="text-gray-300 hover:text-pink-400 transition"
+              title="Instagram"
+            >
+              <ExternalLink size={20} />
+            </a>
+            <a
+              href={data.personalInfo.facebook}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-300 hover:text-blue-500 transition"
+              title="Facebook"
+            >
+              <ExternalLink size={20} />
+            </a>
+            <a
+              href={data.personalInfo.tiktok}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-300 hover:text-gray-100 transition"
+              title="TikTok"
             >
               <ExternalLink size={20} />
             </a>
             <a
               href={`mailto:${data.personalInfo.email}`}
               className="text-gray-300 hover:text-white transition"
+              title="Email"
             >
               <Mail size={20} />
             </a>
@@ -150,24 +171,45 @@ export default function Header() {
                 </span>
               </button>
               <a
-                href={data.personalInfo.github}
+                href={data.personalInfo.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-300"
+                className="text-gray-300 hover:text-blue-400 transition"
+                title="LinkedIn"
               >
                 <ExternalLink size={20} />
               </a>
               <a
-                href={data.personalInfo.linkedin}
+                href={data.personalInfo.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-300"
+                className="text-gray-300 hover:text-pink-400 transition"
+                title="Instagram"
+              >
+                <ExternalLink size={20} />
+              </a>
+              <a
+                href={data.personalInfo.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-blue-500 transition"
+                title="Facebook"
+              >
+                <ExternalLink size={20} />
+              </a>
+              <a
+                href={data.personalInfo.tiktok}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-gray-100 transition"
+                title="TikTok"
               >
                 <ExternalLink size={20} />
               </a>
               <a
                 href={`mailto:${data.personalInfo.email}`}
-                className="text-gray-300"
+                className="text-gray-300 hover:text-white transition"
+                title="Email"
               >
                 <Mail size={20} />
               </a>

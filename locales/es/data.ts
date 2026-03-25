@@ -7,6 +7,9 @@ export const personalInfo = {
   location: "Ecuador, Pichincha, Quito, 170201",
   github: "https://github.com/pablochandi",
   linkedin: "https://linkedin.com/in/pablochandi",
+  instagram: "https://instagram.com/pablochandi",
+  facebook: "https://facebook.com/pablochandi",
+  tiktok: "https://tiktok.com/@pablochandi",
 };
 
 export const skills = [
@@ -81,7 +84,8 @@ export const projects = [
   {
     id: 1,
     title: "Título de Proyecto de Ejemplo",
-    description: "Descripción de proyecto de ejemplo. Este es un marcador de posición para futuros detalles del proyecto.",
+    description:
+      "Descripción de proyecto de ejemplo. Este es un marcador de posición para futuros detalles del proyecto.",
     technologies: ["Tecnología 1", "Tecnología 2", "Tecnología 3"],
     highlights: [
       "Punto destacado de ejemplo 1",
@@ -99,7 +103,8 @@ export const experience = [
     company: "Buk Spa - Software de RRHH y Nómina",
     position: "Ingeniero de Software (Remoto, Chile)",
     period: "Ene 2023 - Presente",
-    description: "Trabajando en un sistema de nómina crítico para Colombia, asegurando cálculos precisos alineados con las regulaciones laborales y fiscales locales.",
+    description:
+      "Trabajando en un sistema de nómina crítico para Colombia, asegurando cálculos precisos alineados con las regulaciones laborales y fiscales locales.",
     achievements: [
       "Trabajé en un sistema de nómina crítico para Colombia, asegurando cálculos precisos alineados con las regulaciones laborales y fiscales locales (salarios, beneficios, impuestos y cumplimiento legal)",
       "Desarrollé funcionalidades para apoyar la expansión de la empresa a nuevos mercados, mejorando la flexibilidad del sistema y el soporte para diferencias regionales",
@@ -115,7 +120,8 @@ export const experience = [
     company: "KRIPTOS - Empresa de IA y Ciberseguridad",
     position: "Ingeniero de Software Semi Senior (Remoto)",
     period: "Jul 2019 - Dic 2022",
-    description: "Lideré el desarrollo de un agente de clasificación de documentos, mejorando la escalabilidad y confiabilidad del sistema.",
+    description:
+      "Lideré el desarrollo de un agente de clasificación de documentos, mejorando la escalabilidad y confiabilidad del sistema.",
     achievements: [
       "Lideré el desarrollo de un agente de clasificación de documentos, mejorando cómo escalaba el sistema y haciéndolo más fácil de mantener con el tiempo",
       "Trabajé con procesamiento asíncrono usando colas y workers en segundo plano para manejar flujos de trabajo de clasificación de documentos, mejorando la escalabilidad y confiabilidad del sistema, mientras monitoreaba logs y métricas para asegurar la calidad",
@@ -133,7 +139,8 @@ export const experience = [
     company: "KRIPTOS - Empresa de IA y Ciberseguridad",
     position: "Ingeniero de Software Junior",
     period: "Rol Anterior",
-    description: "Trabajé en varias aplicaciones incluyendo un verificador seguro y herramientas para desinstalar productos de Windows.",
+    description:
+      "Trabajé en varias aplicaciones incluyendo un verificador seguro y herramientas para desinstalar productos de Windows.",
     achievements: [
       "Trabajé en varias aplicaciones, incluyendo un verificador seguro y una herramienta para desinstalar productos de Windows (C#, APIs, Bash)",
       "Apliqué estrategias de indexación para optimizar el rendimiento de la base de datos y manejar grandes conjuntos de datos de manera más eficiente",

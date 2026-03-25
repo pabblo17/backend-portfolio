@@ -7,6 +7,9 @@ export const personalInfo = {
   location: "Ecuador, Pichincha, Quito, 170201",
   github: "https://github.com/pablochandi",
   linkedin: "https://linkedin.com/in/pablochandi",
+  instagram: "https://instagram.com/pablochandi",
+  facebook: "https://facebook.com/pablochandi",
+  tiktok: "https://tiktok.com/@pablochandi",
 };
 
 export const skills = [
@@ -81,7 +84,8 @@ export const projects = [
   {
     id: 1,
     title: "Sample Project Title",
-    description: "Sample project description. This is a placeholder for future project details.",
+    description:
+      "Sample project description. This is a placeholder for future project details.",
     technologies: ["Technology 1", "Technology 2", "Technology 3"],
     highlights: [
       "Sample highlight 1",
@@ -99,7 +103,8 @@ export const experience = [
     company: "Buk Spa - HR & Payroll Software",
     position: "Software Engineer (Remote, Chile)",
     period: "Jan 2023 - Present",
-    description: "Working on a mission-critical payroll system for Colombia, ensuring accurate calculations aligned with local labor and tax regulations.",
+    description:
+      "Working on a mission-critical payroll system for Colombia, ensuring accurate calculations aligned with local labor and tax regulations.",
     achievements: [
       "Worked on a mission-critical payroll system for Colombia, ensuring accurate calculations aligned with local labor and tax regulations (salaries, benefits, taxes, and legal compliance)",
       "Developed features to support the company's expansion into new markets, improving system flexibility and support for regional differences",
@@ -115,7 +120,8 @@ export const experience = [
     company: "KRIPTOS - AI & Cybersecurity Company",
     position: "Semi Senior - Software Engineer (Remote)",
     period: "Jul 2019 - Dec 2022",
-    description: "Led the development of a document classification agent, improving system scalability and reliability.",
+    description:
+      "Led the development of a document classification agent, improving system scalability and reliability.",
     achievements: [
       "Led the development of a document classification agent, improving how the system scaled and making it easier to maintain over time",
       "Worked with asynchronous processing using queues and background workers to handle document classification workflows, improving scalability and system reliability, while monitoring logs and metrics to ensure quality",
@@ -133,7 +139,8 @@ export const experience = [
     company: "KRIPTOS - AI & Cybersecurity Company",
     position: "Junior Software Engineer",
     period: "Earlier Role",
-    description: "Worked on various applications including a secure verifier and tools for uninstalling Windows products.",
+    description:
+      "Worked on various applications including a secure verifier and tools for uninstalling Windows products.",
     achievements: [
       "Worked on various applications, including a secure verifier and a tool for uninstalling Windows products (C#, APIs, Bash)",
       "Applied indexing strategies to optimize database performance and handle large datasets more efficiently",
