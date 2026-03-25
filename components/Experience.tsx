@@ -40,7 +40,7 @@ export default function Experience() {
             {/* Timeline Container */}
             <div className="relative">
               {/* Línea central del timeline */}
-              <div className="absolute left-8 md:left-1/2 transform md:-translate-x-1/2 h-full w-0.5 bg-gradient-to-b from-blue-400 to-blue-600"></div>
+              <div className="absolute left-8 md:left-1/2 transform md:-translate-x-1/2 h-full w-0.5 bg-gradient-to-b from-green-400 to-green-600"></div>
 
               {/* Timeline Items */}
               <div className="space-y-12">
@@ -52,15 +52,15 @@ export default function Experience() {
                     }`}
                   >
                     {/* Nodo del timeline */}
-                    <div className="absolute left-8 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-blue-400 rounded-full border-4 border-gray-900 z-10">
-                      <div className="absolute inset-0 bg-blue-400 rounded-full animate-ping opacity-75"></div>
+                    <div className="absolute left-8 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-green-400 rounded-full border-4 border-gray-900 z-10">
+                      <div className="absolute inset-0 bg-green-400 rounded-full animate-ping opacity-75"></div>
                     </div>
 
                     {/* Content Card */}
                     <div
                       className={`ml-16 md:ml-0 md:w-1/2 ${index % 2 === 0 ? "md:pr-8 md:text-right" : "md:pl-8"}`}
                     >
-                      <div className="bg-gray-800 rounded-lg border border-gray-700 hover:border-blue-400 transition-all duration-300 hover:shadow-lg hover:shadow-blue-400/20 overflow-hidden">
+                      <div className="bg-gray-800 rounded-lg border border-gray-700 hover:border-green-400 transition-all duration-300 hover:shadow-lg hover:shadow-green-400/20 overflow-hidden">
                         {/* Header - Siempre visible */}
                         <div
                           className="p-6 cursor-pointer select-none"
@@ -92,7 +92,7 @@ export default function Experience() {
 
                             {/* Toggle Button */}
                             <div className="flex-shrink-0">
-                              <div className="w-8 h-8 bg-blue-400/20 rounded-lg flex items-center justify-center text-blue-400 hover:bg-blue-400/30 transition-colors">
+                              <div className="w-8 h-8 bg-green-400/20 rounded-lg flex items-center justify-center text-green-400 hover:bg-green-400/30 transition-colors">
                                 {expandedCards.includes(exp.id) ? (
                                   <ChevronUp size={16} />
                                 ) : (
@@ -130,7 +130,7 @@ export default function Experience() {
                                   key={idx}
                                   className="flex items-start gap-2"
                                 >
-                                  <div className="w-1.5 h-1.5 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
+                                  <div className="w-1.5 h-1.5 bg-green-400 rounded-full mt-2 flex-shrink-0"></div>
                                   <p className="text-sm text-gray-300 leading-relaxed">
                                     {achievement}
                                   </p>
@@ -150,18 +150,18 @@ export default function Experience() {
           {/* Certifications Section */}
           <div>
             <h3 className="text-2xl font-semibold text-white mb-8 flex items-center gap-2">
-              <Award className="text-blue-400" />
+              <Award className="text-green-400" />
               {t.experience.certifications}
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {data.certifications.map((cert, idx) => (
                 <div
                   key={idx}
-                  className="bg-gradient-to-r from-gray-800 to-gray-800 p-6 rounded-lg border border-gray-700 hover:border-blue-400 transition-all duration-300 hover:shadow-lg hover:shadow-blue-400/20 group"
+                  className="bg-gradient-to-r from-gray-800 to-gray-800 p-6 rounded-lg border border-gray-700 hover:border-green-400 transition-all duration-300 hover:shadow-lg hover:shadow-green-400/20 group"
                 >
                   <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-blue-400/20 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-blue-400/30 transition-colors">
-                      <Award size={16} className="text-blue-400" />
+                    <div className="w-8 h-8 bg-green-400/20 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-green-400/30 transition-colors">
+                      <Award size={16} className="text-green-400" />
                     </div>
                     <p className="text-gray-300 leading-relaxed">{cert}</p>
                   </div>

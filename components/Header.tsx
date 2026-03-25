@@ -25,8 +25,14 @@ export default function Header() {
     <header className="fixed top-0 w-full bg-gray-900/95 backdrop-blur-sm z-50">
       <nav className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
-          <div className="text-xl font-bold text-white">
-            {data.personalInfo.name.split(" ")[0]}
+          <div className="flex items-center gap-2">
+            <div className="text-xl font-bold text-white">PCH</div>
+            <div className="flex items-center gap-1">
+              <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+              <span className="text-xs text-green-400 font-medium">
+                {language === "es" ? "Disponible" : "Available"}
+              </span>
+            </div>
           </div>
 
           <div className="hidden md:flex items-center gap-8">
