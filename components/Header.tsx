@@ -1,6 +1,6 @@
 "use client";
 
-import { Mail, Menu, X, Languages } from "lucide-react";
+import { Mail, Menu, X, Languages, ExternalLink } from "lucide-react";
 import { useState } from "react";
 import { useTranslation } from "@/lib/i18n/useTranslation";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
@@ -81,7 +81,7 @@ export default function Header() {
               rel="noopener noreferrer"
               className="text-gray-300 hover:text-white transition"
             >
-              <Mail size={20} />
+              <ExternalLink size={20} />
             </a>
             <a
               href={data.personalInfo.linkedin}
@@ -89,7 +89,7 @@ export default function Header() {
               rel="noopener noreferrer"
               className="text-gray-300 hover:text-white transition"
             >
-              <Mail size={20} />
+              <ExternalLink size={20} />
             </a>
             <a
               href={`mailto:${data.personalInfo.email}`}
@@ -155,7 +155,7 @@ export default function Header() {
                 rel="noopener noreferrer"
                 className="text-gray-300"
               >
-                <Mail size={20} />
+                <ExternalLink size={20} />
               </a>
               <a
                 href={data.personalInfo.linkedin}
@@ -163,7 +163,7 @@ export default function Header() {
                 rel="noopener noreferrer"
                 className="text-gray-300"
               >
-                <Mail size={20} />
+                <ExternalLink size={20} />
               </a>
               <a
                 href={`mailto:${data.personalInfo.email}`}
