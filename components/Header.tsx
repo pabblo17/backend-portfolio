@@ -1,12 +1,6 @@
 "use client";
 
-import { Mail, Menu, X, Languages } from "lucide-react";
-import {
-  LinkedInIcon,
-  InstagramIcon,
-  FacebookIcon,
-  TikTokIcon,
-} from "./icons/SocialIcons";
+import { Menu, X, Languages } from "lucide-react";
 import { useState } from "react";
 import { useTranslation } from "@/lib/i18n/useTranslation";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
@@ -28,25 +22,19 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed top-0 w-full bg-gray-900/95 backdrop-blur-sm z-50 border-b border-gray-800">
+    <header className="fixed top-0 w-full bg-gray-900/95 backdrop-blur-sm z-50">
       <nav className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           <div className="text-xl font-bold text-white">
-            {data.personalInfo.name}
+            {data.personalInfo.name.split(" ")[0]}
           </div>
 
           <div className="hidden md:flex items-center gap-8">
             <button
-              onClick={() => scrollToSection("about")}
+              onClick={() => scrollToSection("experience")}
               className="text-gray-300 hover:text-white transition"
             >
-              {t.nav.about}
-            </button>
-            <button
-              onClick={() => scrollToSection("skills")}
-              className="text-gray-300 hover:text-white transition"
-            >
-              {t.nav.skills}
+              {t.nav.experience}
             </button>
             <button
               onClick={() => scrollToSection("projects")}
@@ -55,75 +43,23 @@ export default function Header() {
               {t.nav.projects}
             </button>
             <button
-              onClick={() => scrollToSection("experience")}
-              className="text-gray-300 hover:text-white transition"
-            >
-              {t.nav.experience}
-            </button>
-            <button
               onClick={() => scrollToSection("contact")}
               className="text-gray-300 hover:text-white transition"
             >
               {t.nav.contact}
             </button>
-          </div>
 
-          <div className="hidden md:flex items-center gap-4">
+            {/* Language Toggle */}
             <button
               onClick={toggleLanguage}
-              className="flex items-center gap-2 text-gray-300 hover:text-white transition px-3 py-1 rounded-lg hover:bg-gray-800"
-              title={
-                language === "en" ? "Cambiar a Español" : "Switch to English"
-              }
+              className="flex items-center gap-1 text-gray-300 hover:text-white transition"
+              title={t.nav.language}
             >
-              <Languages size={20} />
+              <Languages size={16} />
               <span className="text-sm font-medium">
                 {language.toUpperCase()}
               </span>
             </button>
-            <a
-              href={data.personalInfo.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-300 hover:text-blue-400 transition"
-              title="LinkedIn"
-            >
-              <LinkedInIcon size={20} />
-            </a>
-            <a
-              href={data.personalInfo.instagram}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-300 hover:text-pink-400 transition"
-              title="Instagram"
-            >
-              <InstagramIcon size={20} />
-            </a>
-            <a
-              href={data.personalInfo.facebook}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-300 hover:text-blue-500 transition"
-              title="Facebook"
-            >
-              <FacebookIcon size={20} />
-            </a>
-            <a
-              href={data.personalInfo.tiktok}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-300 hover:text-gray-100 transition"
-              title="TikTok"
-            >
-              <TikTokIcon size={20} />
-            </a>
-            <a
-              href={`mailto:${data.personalInfo.email}`}
-              className="text-gray-300 hover:text-white transition"
-              title="Email"
-            >
-              <Mail size={20} />
-            </a>
           </div>
 
           <button
@@ -137,28 +73,16 @@ export default function Header() {
         {isMenuOpen && (
           <div className="md:hidden mt-4 pb-4 flex flex-col gap-4">
             <button
-              onClick={() => scrollToSection("about")}
+              onClick={() => scrollToSection("experience")}
               className="text-left text-gray-300 hover:text-white transition"
             >
-              {t.nav.about}
-            </button>
-            <button
-              onClick={() => scrollToSection("skills")}
-              className="text-left text-gray-300 hover:text-white transition"
-            >
-              {t.nav.skills}
+              {t.nav.experience}
             </button>
             <button
               onClick={() => scrollToSection("projects")}
               className="text-left text-gray-300 hover:text-white transition"
             >
               {t.nav.projects}
-            </button>
-            <button
-              onClick={() => scrollToSection("experience")}
-              className="text-left text-gray-300 hover:text-white transition"
-            >
-              {t.nav.experience}
             </button>
             <button
               onClick={() => scrollToSection("contact")}
@@ -176,49 +100,6 @@ export default function Header() {
                   {language === "en" ? "ES" : "EN"}
                 </span>
               </button>
-              <a
-                href={data.personalInfo.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-300 hover:text-blue-400 transition"
-                title="LinkedIn"
-              >
-                <LinkedInIcon size={20} />
-              </a>
-              <a
-                href={data.personalInfo.instagram}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-300 hover:text-pink-400 transition"
-                title="Instagram"
-              >
-                <InstagramIcon size={20} />
-              </a>
-              <a
-                href={data.personalInfo.facebook}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-300 hover:text-blue-500 transition"
-                title="Facebook"
-              >
-                <FacebookIcon size={20} />
-              </a>
-              <a
-                href={data.personalInfo.tiktok}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-300 hover:text-gray-100 transition"
-                title="TikTok"
-              >
-                <TikTokIcon size={20} />
-              </a>
-              <a
-                href={`mailto:${data.personalInfo.email}`}
-                className="text-gray-300 hover:text-white transition"
-                title="Email"
-              >
-                <Mail size={20} />
-              </a>
             </div>
           </div>
         )}
