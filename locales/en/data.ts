@@ -105,7 +105,8 @@ export const experience = [
     period: "Jan 2023 - Present",
     location: "Chile (Remote)",
     description:
-      "Working on a mission-critical payroll system for Colombia, ensuring accurate calculations aligned with local labor and tax regulations.",
+      "Collaboration on improvement and maintenance of mission-critical payroll system for Colombia, architecture refactoring, and cross-functional team work.",
+    technologies: ["React", "Node.js", "Azure", "Docker", "Spring Boot"],
     achievements: [
       "Worked on a mission-critical payroll system for Colombia, ensuring accurate calculations aligned with local labor and tax regulations (salaries, benefits, taxes, and legal compliance)",
       "Developed features to support the company's expansion into new markets, improving system flexibility and support for regional differences",
@@ -123,7 +124,15 @@ export const experience = [
     period: "Jul 2019 - Dec 2022",
     location: "Remote",
     description:
-      "Led the development of a document classification agent, improving system scalability and reliability.",
+      "Led development of document classification agent with asynchronous processing, Docker containerization, and cloud agent management.",
+    technologies: [
+      "Angular",
+      "Flutter",
+      "Dart",
+      "Firebase",
+      "Node.js",
+      "Express",
+    ],
     achievements: [
       "Led the development of a document classification agent, improving how the system scaled and making it easier to maintain over time",
       "Worked with asynchronous processing using queues and background workers to handle document classification workflows, improving scalability and system reliability, while monitoring logs and metrics to ensure quality",
@@ -140,10 +149,11 @@ export const experience = [
     id: 3,
     company: "KRIPTOS - AI & Cybersecurity Company",
     position: "Junior Software Engineer",
-    period: "Earlier Role",
+    period: "Previous Role",
     location: "Remote",
     description:
-      "Worked on various applications including a secure verifier and tools for uninstalling Windows products.",
+      "Development of security applications and Windows tools, database optimization, and data quality analysis.",
+    technologies: [],
     achievements: [
       "Worked on various applications, including a secure verifier and a tool for uninstalling Windows products (C#, APIs, Bash)",
       "Applied indexing strategies to optimize database performance and handle large datasets more efficiently",

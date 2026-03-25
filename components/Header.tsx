@@ -48,6 +48,12 @@ export default function Header() {
             >
               {t.nav.projects}
             </button>
+            <a
+              href="/blog"
+              className="text-gray-300 hover:text-white transition"
+            >
+              Blog
+            </a>
             <button
               onClick={() => scrollToSection("contact")}
               className="text-gray-300 hover:text-white transition"
@@ -90,6 +96,12 @@ export default function Header() {
             >
               {t.nav.projects}
             </button>
+            <a
+              href="/blog"
+              className="text-left text-gray-300 hover:text-white transition"
+            >
+              Blog
+            </a>
             <button
               onClick={() => scrollToSection("contact")}
               className="text-left text-gray-300 hover:text-white transition"

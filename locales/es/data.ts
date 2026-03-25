@@ -105,7 +105,8 @@ export const experience = [
     period: "Ene 2023 - Presente",
     location: "Chile (Remoto)",
     description:
-      "Trabajando en un sistema de nómina crítico para Colombia, asegurando cálculos precisos alineados con las regulaciones laborales y fiscales locales.",
+      "Colaboración en mejora y mantenimiento de sistema de nómina crítico para Colombia, refactorización de arquitectura y trabajo con equipos multidisciplinarios.",
+    technologies: ["React", "Node.js", "Azure", "Docker", "Spring Boot"],
     achievements: [
       "Trabajé en un sistema de nómina crítico para Colombia, asegurando cálculos precisos alineados con las regulaciones laborales y fiscales locales (salarios, beneficios, impuestos y cumplimiento legal)",
       "Desarrollé funcionalidades para apoyar la expansión de la empresa a nuevos mercados, mejorando la flexibilidad del sistema y el soporte para diferencias regionales",
@@ -123,7 +124,15 @@ export const experience = [
     period: "Jul 2019 - Dic 2022",
     location: "Remoto",
     description:
-      "Lideré el desarrollo de un agente de clasificación de documentos, mejorando la escalabilidad y confiabilidad del sistema.",
+      "Liderazgo en desarrollo de agente de clasificación de documentos con procesamiento asíncrono, containerización Docker y gestión de agentes en la nube.",
+    technologies: [
+      "Angular",
+      "Flutter",
+      "Dart",
+      "Firebase",
+      "Node.js",
+      "Express",
+    ],
     achievements: [
       "Lideré el desarrollo de un agente de clasificación de documentos, mejorando cómo escalaba el sistema y haciéndolo más fácil de mantener con el tiempo",
       "Trabajé con procesamiento asíncrono usando colas y workers en segundo plano para manejar flujos de trabajo de clasificación de documentos, mejorando la escalabilidad y confiabilidad del sistema, mientras monitoreaba logs y métricas para asegurar la calidad",
@@ -143,7 +152,8 @@ export const experience = [
     period: "Rol Anterior",
     location: "Remoto",
     description:
-      "Trabajé en varias aplicaciones incluyendo un verificador seguro y herramientas para desinstalar productos de Windows.",
+      "Desarrollo de aplicaciones de seguridad y herramientas de Windows, optimización de bases de datos y análisis de calidad de datos.",
+    technologies: [],
     achievements: [
       "Trabajé en varias aplicaciones, incluyendo un verificador seguro y una herramienta para desinstalar productos de Windows (C#, APIs, Bash)",
       "Apliqué estrategias de indexación para optimizar el rendimiento de la base de datos y manejar grandes conjuntos de datos de manera más eficiente",
