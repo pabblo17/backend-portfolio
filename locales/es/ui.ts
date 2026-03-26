@@ -1,4 +1,3 @@
-// Traducciones de UI para Español
 export const ui = {
   nav: {
     about: "Acerca de",

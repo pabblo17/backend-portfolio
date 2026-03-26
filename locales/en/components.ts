@@ -1,18 +1,14 @@
-// Component translations organized by context
 export const components = {
-  // Header Component
   header: {
     available: "Available",
   },
 
-  // Hero Component
   hero: {
     greeting: "Hi I'm",
     getInTouch: "Get in Touch",
     viewProjects: "View Projects",
   },
 
-  // Contact Component (CTA Section)
   contactCTA: {
     title: "Ready to work together?",
     description:
@@ -21,7 +17,6 @@ export const components = {
     downloadCV: "Download CV",
   },
 
-  // Contact Page
   contactPage: {
     backButton: "Back",
     title: "Let's Talk",
@@ -58,7 +53,6 @@ export const components = {
     responseTime: "I usually respond within 24 hours.",
   },
 
-  // Footer Component
   footer: {
     availability: "Available for new projects",
     location: "Quito, Pichincha, Ecuador • 170150",
@@ -70,7 +64,6 @@ export const components = {
     contact: "Contact",
   },
 
-  // Blog Page
   blog: {
     backButton: "Back",
     title: "Blog",
@@ -87,7 +80,6 @@ export const components = {
     },
   },
 
-  // Projects Component
   projects: {
     viewMoreGithub: "View more projects on GitHub",
     nextProject: "Next project",

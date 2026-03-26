@@ -1,4 +1,3 @@
-// UI translations for English
 export const ui = {
   nav: {
     about: "About",

@@ -1,4 +1,3 @@
-// Versión en español
 export const personalInfo = {
   name: "Pablo Chandi",
   role: "Ingeniero Backend Senior | Experiencia Fullstack",
