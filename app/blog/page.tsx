@@ -22,15 +22,6 @@ export default function BlogPage() {
 
   return (
     <div className="min-h-screen bg-gray-900">
-      {/* Header simple */}
-      <header className="py-6 border-b border-gray-800">
-        <div className="container mx-auto px-4">
-          <Link href="/" className="text-white hover:text-blue-400 transition">
-            ← {c.blog.backButton}
-          </Link>
-        </div>
-      </header>
-
       {/* Main content */}
       <main className="py-20">
         <div className="container mx-auto px-4">
