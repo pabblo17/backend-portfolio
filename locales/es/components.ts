@@ -10,9 +10,6 @@ export const components = {
   },
 
   contactCTA: {
-    title: "¿Listo para trabajar juntos?",
-    description:
-      "Estoy disponible para nuevos proyectos y colaboraciones. Si buscas un desarrollador comprometido con la calidad y los resultados, hablemos.",
     contactButton: "Contáctame",
     downloadCV: "Descargar CV",
   },
