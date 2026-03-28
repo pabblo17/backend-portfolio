@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function BlogPage() {
   const { c, language } = useTranslation();
 
-  // Artículo de ejemplo con nota de IA
+  // Artículo de ejemplo
   const blogPosts = [
     {
       id: 1,
@@ -15,7 +15,8 @@ export default function BlogPage() {
       excerpt: c.blog.samplePost.excerpt,
       date: "2024-03-15",
       readTime: "5 min",
-      aiAssisted: true,
+      tags: c.blog.samplePost.tags,
+      draft: c.blog.samplePost.draft,
     },
   ];
 
@@ -72,13 +73,6 @@ export default function BlogPage() {
                           {language === "es" ? "lectura" : "read"}
                         </span>
                       </div>
-                      {post.aiAssisted && (
-                        <span className="px-2 py-1 bg-purple-500/10 text-purple-400 rounded text-xs border border-purple-500/20">
-                          {language === "es"
-                            ? "✨ Escrito con ayuda de IA"
-                            : "✨ AI-assisted"}
-                        </span>
-                      )}
                     </div>
 
                     {/* Title */}
@@ -90,6 +84,27 @@ export default function BlogPage() {
                     <p className="text-gray-400 leading-relaxed">
                       {post.excerpt}
                     </p>
+
+                    {/* Tags */}
+                    <div className="flex flex-wrap gap-2 mt-4 items-center">
+                      {post.tags && (
+                        <>
+                          {post.tags.map((tag: string, index: number) => (
+                            <span
+                              key={index}
+                              className="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs border border-blue-500/20"
+                            >
+                              {tag}
+                            </span>
+                          ))}
+                        </>
+                      )}
+                      {post.draft && (
+                        <span className="px-3 py-1 bg-yellow-500/10 text-yellow-400 rounded-full text-xs border border-yellow-500/20">
+                          📝 {language === "es" ? "Borrador" : "Draft"}
+                        </span>
+                      )}
+                    </div>
 
                     {/* Read more link */}
                     <div>

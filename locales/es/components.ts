@@ -68,12 +68,22 @@ export const components = {
       "Pensamientos, experiencias y aprendizajes sobre desarrollo de software",
     readMore: "Leer más",
     readTime: "lectura",
-    aiAssisted: "✨ Escrito con ayuda de IA",
     comingSoon: "Más artículos próximamente...",
     samplePost: {
-      title: "Cómo optimizar el rendimiento de aplicaciones React",
+      title:
+        "Optimización de costos con Kubernetes: Instancias Spot y Multicloud",
       excerpt:
-        "Exploramos técnicas avanzadas para mejorar el rendimiento de aplicaciones React, incluyendo memoización, lazy loading y optimización de re-renders.",
+        "Mi experiencia implementando una solución multicloud con Liqo, AWS y GCP para reducir costos de infraestructura hasta un 70% usando instancias spot en Kubernetes. Análisis de usabilidad, configuración y resultados reales de mi tesis de fin de máster.",
+      tags: [
+        "Kubernetes",
+        "AWS",
+        "GCP",
+        "Liqo",
+        "Spot Instances",
+        "Multicloud",
+        "Cost Optimization",
+      ],
+      draft: true,
     },
   },
 
